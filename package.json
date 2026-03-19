@@ -1,0 +1,49 @@
+{
+  "name": "micoli",
+  "version": "0.0.2",
+  "description": "a mini mini experimental coding agent",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andraindrops/micoli.git"
+  },
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "bin": {
+    "micoli": "./dist/index.js"
+  },
+  "scripts": {
+    "lint": "biome check .",
+    "test": "vitest run",
+    "format": "biome check --fix .",
+    "start": "dotenvx run --env-file=.env -- tsx src/index.tsx",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.6",
+    "@dotenvx/dotenvx": "^1.40.1",
+    "@types/json-schema": "^7.0.15",
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.2.14",
+    "msw": "^2.12.13",
+    "tsx": "^4.19.0",
+    "vitest": "^3.2.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@openrouter/ai-sdk-provider": "^2.3.0",
+    "ai": "^6.0.116",
+    "diff": "^8.0.3",
+    "globby": "^16.1.1",
+    "ink": "^6.8.0",
+    "ink-text-input": "^6.0.0",
+    "outdent": "^0.8.0",
+    "react": "^19.2.4"
+  }
+}
