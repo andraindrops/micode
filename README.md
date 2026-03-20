@@ -2,6 +2,8 @@
 
 mini mini (about 1000 lines of code) coding agents 🤖
 
+https://github.com/user-attachments/assets/293dee29-93f3-4fb7-9d03-34ded89a72f2
+
 ## Getting Started
 
 ```bash
