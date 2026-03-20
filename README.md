@@ -1,6 +1,6 @@
 # micoli
 
-a mini mini experimental coding agent
+mini mini (about 1000 lines of code) coding agents 🤖
 
 ## Getting Started
 
